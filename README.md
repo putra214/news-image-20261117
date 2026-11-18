@@ -12,7 +12,7 @@ THE WORLD IN A DAY — a one-page newspaper image summing up Tuesday 17 November
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-`main.ts` (Node 22, standard library only) copies the `entry.png` beside it to the output directory, byte for byte, every run. `page.html` is the newspaper page the image was rendered from (Playwright/Chromium, see `render.js`); `build/` holds the scripts that built it.
+`main.ts` (Node 22, standard library only) copies the `entry.png` beside it to the output directory, byte for byte, every run.
 
 ---
 
