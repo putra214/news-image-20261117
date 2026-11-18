@@ -19,7 +19,7 @@
   }
   /* ---------- masthead ---------- */
   .masthead {
-    margin: -5px -24px 0; padding: 4px 24px 6px;
+    margin: -5px -24px 0; padding: 3px 24px 4px;
     background: #0f1e33; color: #fff; border-bottom: 3px solid #c9a227;
   }
   .masthead .topline {
@@ -28,15 +28,15 @@
     font-size: 12.5px; font-weight: bold; letter-spacing: 2.5px; color: #c9a227;
     border-bottom: 1px solid rgba(201,162,39,.45); padding-bottom: 2px;
   }
-  .masthead h1 { text-align: center; font-size: 34px; line-height: 1; font-weight: bold; letter-spacing: 1px; margin-top: 2px; }
+  .masthead h1 { text-align: center; font-size: 32px; line-height: 1; font-weight: bold; letter-spacing: 1px; margin-top: 2px; }
   .masthead .dateline {
     text-align: center; font-family: 'Liberation Sans', 'DejaVu Sans', Arial, sans-serif;
-    font-size: 17px; font-weight: bold; letter-spacing: 3px; color: #c9a227; margin-top: 2px;
+    font-size: 16px; font-weight: bold; letter-spacing: 3px; color: #c9a227; margin-top: 2px;
   }
   /* ---------- section headers ---------- */
   .sec {
     display: flex; align-items: baseline; gap: 8px;
-    margin-top: 4px; border-bottom: 2px solid #17130e; padding-bottom: 1px;
+    margin-top: 2px; border-bottom: 2px solid #17130e; padding-bottom: 1px;
   }
   .sec h2 {
     font-family: 'Liberation Sans', 'DejaVu Sans', Arial, sans-serif;
@@ -47,55 +47,70 @@
     font-size: 10.5px; font-weight: bold; letter-spacing: 1px; color: #6b5d43;
   }
   .sec .rule { flex: 1; border-top: 1px solid #b9b2a2; }
+  /* ---------- hero row ---------- */
+  .hero { display: grid; grid-template-columns: repeat(3, 1fr); gap: 13px; margin-top: 3px; }
+  .hero article { border-top: 3px solid #8a7f63; padding-top: 4px; }
+  .hero .art svg { display: block; width: 100%; height: 82px; border: 1px solid #8a7f63; box-shadow: 0 1px 3px rgba(0,0,0,.28); }
+  .hero .kick {
+    font-family: 'Liberation Sans', 'DejaVu Sans', Arial, sans-serif;
+    font-size: 11px; font-weight: bold; letter-spacing: 1.4px; margin-top: 4px;
+  }
+  .hero .kick .hb {
+    display: inline-block; width: 17px; height: 17px; border-radius: 50%; color: #fff;
+    font-size: 11px; line-height: 17px; text-align: center; margin-right: 3px;
+  }
+  .hero h3 { font-size: 15px; line-height: 1.1; font-weight: bold; margin: 1px 0 2px; }
+  .hero p { font-family: 'Liberation Sans', 'DejaVu Sans', Arial, sans-serif; font-size: 9.5px; line-height: 1.25; color: #2b2823; }
   /* ---------- top 10 grid ---------- */
-  .big { display: grid; grid-template-columns: repeat(5, 1fr); gap: 13px; row-gap: 8px; margin-top: 5px; }
+  .big { display: grid; grid-template-columns: repeat(5, 1fr); gap: 13px; row-gap: 6px; margin-top: 3px; }
   .story { border-top: 3px solid #8a7f63; padding-top: 4px; }
   .art { position: relative; }
-  .art svg { display: block; width: 100%; height: 88px; border: 1px solid #8a7f63; box-shadow: 0 1px 3px rgba(0,0,0,.28); }
+  .art svg { display: block; width: 100%; height: 74px; border: 1px solid #8a7f63; box-shadow: 0 1px 3px rgba(0,0,0,.28); }
   .badge {
     position: absolute; top: 4px; left: 4px; width: 18px; height: 18px; border-radius: 50%;
     color: #fff; font-family: 'Liberation Sans', 'DejaVu Sans', Arial, sans-serif;
     font-size: 11.5px; font-weight: bold; line-height: 18px; text-align: center;
     box-shadow: 0 1px 2px rgba(0,0,0,.45);
   }
-  .mini svg { display: block; width: 100%; height: 26px; border: 1px solid #b9b2a2; margin-top: 3px; }
+  .mini svg { display: block; width: 100%; height: 22px; border: 1px solid #b9b2a2; margin-top: 3px; }
   .kick {
     font-family: 'Liberation Sans', 'DejaVu Sans', Arial, sans-serif;
     font-size: 10px; font-weight: bold; letter-spacing: 1.4px; margin-top: 4px;
   }
-  .story h3 { font-size: 13px; line-height: 1.08; font-weight: bold; margin: 1px 0 2px; }
-  .story p { font-family: 'Liberation Sans', 'DejaVu Sans', Arial, sans-serif; font-size: 9.5px; line-height: 1.25; color: #2b2823; }
+  .story h3 { font-size: 12.5px; line-height: 1.08; font-weight: bold; margin: 1px 0 2px; }
+  .story p { font-family: 'Liberation Sans', 'DejaVu Sans', Arial, sans-serif; font-size: 9px; line-height: 1.25; color: #2b2823; }
   /* ---------- more stories + phenomena ---------- */
-  .more, .phen { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; row-gap: 8px; margin-top: 5px; }
+  .more { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; row-gap: 6px; margin-top: 3px; }
+  .phen { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; row-gap: 6px; margin-top: 3px; }
   .item { border-top: 2px solid #c9c0ad; padding-top: 3px; }
   .band { position: relative; }
-  .band svg { display: block; width: 100%; height: 30px; border: 1px solid #b9b2a2; box-shadow: 0 1px 2px rgba(0,0,0,.2); }
+  .band svg { display: block; width: 100%; height: 20px; border: 1px solid #b9b2a2; box-shadow: 0 1px 2px rgba(0,0,0,.2); }
   .band .badge { width: 16px; height: 16px; line-height: 16px; font-size: 10px; top: 3px; left: 3px; }
-  .item h4 { font-size: 12px; line-height: 1.06; font-weight: bold; margin: 2px 0 1px; }
-  .item p { font-family: 'Liberation Sans', 'DejaVu Sans', Arial, sans-serif; font-size: 9px; line-height: 1.22; color: #2b2823; }
+  .item h4 { font-size: 11.5px; line-height: 1.06; font-weight: bold; margin: 2px 0 1px; }
+  .item p { font-family: 'Liberation Sans', 'DejaVu Sans', Arial, sans-serif; font-size: 8.5px; line-height: 1.22; color: #2b2823; }
   /* ---------- bottom row: map + also on ---------- */
-  .footrow { display: flex; gap: 14px; margin-top: 5px; }
+  .footrow { display: flex; gap: 14px; margin-top: 3px; }
   .mapbox { flex: 0 0 470px; border-top: 2px solid #17130e; padding-top: 3px; }
   .mapbox h2 {
     font-family: 'Liberation Sans', 'DejaVu Sans', Arial, sans-serif;
-    font-size: 11.5px; font-weight: bold; letter-spacing: 1.8px; color: #8a1f1f; margin-bottom: 3px;
+    font-size: 11.5px; font-weight: bold; letter-spacing: 1.8px; color: #8a1f1f; margin-bottom: 2px;
   }
   .mapbox svg { display: block; width: 100%; height: 112px; border: 1px solid #b9b2a2; }
   .legend {
     font-family: 'Liberation Sans', 'DejaVu Sans', Arial, sans-serif;
-    font-size: 8.5px; font-weight: bold; letter-spacing: .6px; color: #4a443c; margin-top: 3px;
+    font-size: 8.5px; font-weight: bold; letter-spacing: .6px; color: #4a443c; margin-top: 2px;
   }
   .also { flex: 1; border-top: 2px solid #17130e; padding-top: 3px; }
   .also h2 {
     font-family: 'Liberation Sans', 'DejaVu Sans', Arial, sans-serif;
-    font-size: 11.5px; font-weight: bold; letter-spacing: 1.8px; margin-bottom: 4px;
+    font-size: 11.5px; font-weight: bold; letter-spacing: 1.8px; margin-bottom: 3px;
   }
   .also h2 span { color: #6b5d43; font-size: 10px; letter-spacing: 1px; }
-  .cols { display: flex; gap: 12px; }
+  .cols { display: flex; gap: 10px; }
   .cols ul { list-style: none; flex: 1; }
   .cols li {
-    display: flex; gap: 5px; align-items: flex-start; margin-bottom: 3px;
-    font-family: 'Liberation Sans', 'DejaVu Sans', Arial, sans-serif; font-size: 9.5px; line-height: 1.25;
+    display: flex; gap: 4px; align-items: flex-start; margin-bottom: 1px;
+    font-family: 'Liberation Sans', 'DejaVu Sans', Arial, sans-serif; font-size: 8.5px; line-height: 1.2;
   }
   .cols li b { font-weight: bold; }
   .cols .n {
@@ -107,11 +122,12 @@
     flex: none; width: 15px; height: 15px; border-radius: 2px; color: #fff;
     font-family: 'Liberation Sans', 'DejaVu Sans', Arial, sans-serif;
     font-size: 7.5px; font-weight: bold; line-height: 15px; text-align: center;
+    background-image: linear-gradient(135deg, rgba(255,255,255,.38), rgba(0,0,0,.22));
   }
   /* ---------- colophon ---------- */
   .colophon {
     text-align: center; font-family: 'Liberation Sans', 'DejaVu Sans', Arial, sans-serif;
-    font-size: 9.5px; color: #4a443c; margin-top: 4px; border-top: 1px solid #b9b2a2; padding-top: 3px;
+    font-size: 9.5px; color: #4a443c; margin-top: 2px; border-top: 1px solid #b9b2a2; padding-top: 2px;
   }
   .colophon em { font-family: 'Liberation Serif', Georgia, serif; font-size: 10px; }
 </style>
@@ -171,148 +187,128 @@
 </svg>
 
 <header class="masthead">
-  <div class="topline"><span>THE WORLD IN A DAY</span><span>36 STORIES &middot; 6 CONTINENTS &middot; ONE DAY</span></div>
+  <div class="topline"><span>THE WORLD IN A DAY</span><span>43 STORIES &middot; 6 CONTINENTS &middot; ONE DAY</span></div>
   <h1>WORLD NEWS</h1>
   <div class="dateline">TUESDAY 17 NOVEMBER 2026</div>
 </header>
 
-<div class="sec"><h2>10 BIGGEST STORIES</h2><span class="rng">&middot; 1&ndash;10</span><div class="rule"></div></div>
+<div class="hero">
 
-<div class="big">
-
-  <!-- 1 · KERCH BRIDGE -->
-  <article class="story" style="border-top-color:#2b5ea7">
+  <!-- HERO 1 · KERCH BRIDGE -->
+  <article style="border-top-color:#2b5ea7">
     <div class="art">
-      <svg viewBox="0 0 190 96" preserveAspectRatio="xMidYMid slice">
-        <rect width="190" height="96" fill="url(#dusk)"/>
-        <circle cx="150" cy="26" r="26" fill="url(#sunGlow)"/>
-        <circle cx="150" cy="26" r="10" fill="#ffe9a8"/>
-        <circle cx="42" cy="30" r="20" fill="url(#fireGlow)"/>
-        <circle cx="42" cy="30" r="7" fill="#fff3c4"/>
-        <path d="M0 52 L20 52 L34 44 L60 44 L60 52 L190 52 L190 96 L0 96 Z" fill="#1c2b3a"/>
-        <path d="M0 52 L190 52" stroke="#0c1e33" stroke-width="2"/>
-        <path d="M14 52 L14 30 M34 52 L34 22 M60 52 L60 30 M86 52 L86 26 M112 52 L112 32 M140 52 L140 28 M168 52 L168 34" stroke="#0c1e33" stroke-width="2.5"/>
-        <path d="M8 30 L66 30 M80 26 L146 26" stroke="#0c1e33" stroke-width="2"/>
-        <path d="M34 22 L60 44 L86 26 L112 44" stroke="#3a2c22" stroke-width="2" fill="none"/>
-        <path d="M60 44 L60 62 L52 70 L68 70 L60 62" fill="#3a2c22"/>
-        <path d="M34 44 L52 44 L52 58 L40 52 Z" fill="#5a4632"/>
-        <rect y="52" width="190" height="44" fill="url(#seaNight)"/>
-        <path d="M0 60 Q30 57 60 60 T120 60 T190 60" stroke="#5f8fb0" stroke-width="1" fill="none" opacity=".7"/>
-        <path d="M0 72 Q40 69 80 72 T190 72" stroke="#5f8fb0" stroke-width="1" fill="none" opacity=".5"/>
-        <path d="M38 58 L46 58 L42 84 Z" fill="#ff8c2e" opacity=".55"/>
-        <path d="M60 60 L64 60 L62 78 Z" fill="#ffd27a" opacity=".4"/>
-        <ellipse cx="150" cy="66" rx="16" ry="6" fill="#ffe9a8" opacity=".22"/>
-        <ellipse cx="150" cy="74" rx="10" ry="4" fill="#ffe9a8" opacity=".14"/>
-      </svg>
-      <span class="badge" style="background:#2b5ea7">1</span>
-    </div>
-    <div class="mini">
-      <svg viewBox="0 0 190 30" preserveAspectRatio="xMidYMid slice">
-        <rect width="190" height="30" fill="#ddd6c4"/>
-        <polygon points="18,12 35,6 70,8 110,5 150,8 172,12 160,20 120,24 80,22 45,24 20,18" fill="#c0392b" stroke="#7a1f14" stroke-width=".8"/>
-        <circle cx="95" cy="14" r="4.4" fill="none" stroke="#17130e" stroke-width="1.2"/>
-        <circle cx="95" cy="14" r="2.2" fill="#c0392b" stroke="#fff" stroke-width=".8"/>
-        <rect x="3" y="3" width="58" height="10" rx="2" fill="#fff" opacity=".88"/>
-        <text x="6" y="10.5" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="7" font-weight="bold" letter-spacing=".6" fill="#2b2823">UKRAINE</text>
+      <svg viewBox="0 0 316 92" preserveAspectRatio="xMidYMid slice">
+        <rect width="316" height="92" fill="url(#dusk)"/>
+        <circle cx="278" cy="20" r="22" fill="url(#sunGlow)"/>
+        <circle cx="278" cy="20" r="8" fill="#ffe9a8"/>
+        <circle cx="96" cy="28" r="18" fill="url(#fireGlow)"/>
+        <circle cx="96" cy="28" r="6" fill="#fff3c4"/>
+        <circle cx="78" cy="10" r="11" fill="#e8e6df" opacity=".55"/>
+        <circle cx="112" cy="6" r="13" fill="#e8e6df" opacity=".4"/>
+        <circle cx="128" cy="14" r="8" fill="#e8e6df" opacity=".35"/>
+        <rect y="44" width="316" height="4" fill="#1c2b3a"/>
+        <path d="M20 44 L20 26 M58 44 L58 20 M96 44 L96 24 M150 44 L150 22 M200 44 L200 26 M250 44 L250 24 M296 44 L296 28" stroke="#0c1e33" stroke-width="2.5"/>
+        <path d="M14 26 L102 26 M144 22 L204 22 M244 24 L302 24" stroke="#0c1e33" stroke-width="2"/>
+        <path d="M58 20 L96 44 L150 22 L200 44" stroke="#3a2c22" stroke-width="2" fill="none"/>
+        <rect y="48" width="316" height="44" fill="url(#seaNight)"/>
+        <path d="M150 48 L158 48 L154 66 L146 66 Z" fill="#3a2c22"/>
+        <path d="M96 48 L104 48 L100 70 L92 70 Z" fill="#5a4632"/>
+        <path d="M0 56 Q40 53 80 56 T160 56 T240 56 T316 56" stroke="#5f8fb0" stroke-width="1" fill="none" opacity=".7"/>
+        <path d="M0 68 Q50 65 100 68 T200 68 T316 68" stroke="#5f8fb0" stroke-width="1" fill="none" opacity=".5"/>
+        <path d="M92 54 L100 54 L96 82 Z" fill="#ff8c2e" opacity=".5"/>
+        <path d="M150 54 L158 54 L154 76 Z" fill="#ffd27a" opacity=".35"/>
+        <ellipse cx="278" cy="62" rx="18" ry="6" fill="#ffe9a8" opacity=".22"/>
+        <ellipse cx="278" cy="72" rx="11" ry="4" fill="#ffe9a8" opacity=".14"/>
       </svg>
     </div>
-    <div class="kick" style="color:#2b5ea7">EUROPE &middot; UKRAINE WAR</div>
+    <div class="kick" style="color:#2b5ea7"><span class="hb" style="background:#2b5ea7">1</span>EUROPE &middot; UKRAINE WAR</div>
     <h3>Ukraine strikes Kerch Bridge</h3>
     <p>A road span fell into the sea after drones and missiles struck overnight.</p>
   </article>
 
-  <!-- 2 · BAHRAIN -->
-  <article class="story" style="border-top-color:#d07a1f">
+  <!-- HERO 2 · BAHRAIN -->
+  <article style="border-top-color:#d07a1f">
     <div class="art">
-      <svg viewBox="0 0 190 96" preserveAspectRatio="xMidYMid slice">
-        <rect width="190" height="96" fill="url(#dusk)"/>
-        <circle cx="158" cy="24" r="24" fill="url(#sunGlow)"/>
-        <circle cx="158" cy="24" r="9" fill="#ffe9a8"/>
-        <circle cx="60" cy="34" r="16" fill="url(#fireGlow)"/>
-        <path d="M0 58 L190 58 L190 96 L0 96 Z" fill="url(#seaNight)"/>
-        <path d="M0 58 L190 58" stroke="#0c1e33" stroke-width="2"/>
-        <path d="M0 46 L78 46 L78 58 L0 58 Z" fill="#23282e"/>
-        <rect x="6" y="34" width="10" height="12" fill="#2e343c"/>
-        <rect x="22" y="28" width="12" height="18" fill="#2e343c"/>
-        <rect x="40" y="36" width="9" height="10" fill="#2e343c"/>
-        <rect x="8" y="37" width="6" height="4" fill="#ffd97a" opacity=".9"/>
-        <rect x="24" y="31" width="6" height="4" fill="#ffd97a" opacity=".9"/>
-        <rect x="24" y="38" width="6" height="4" fill="#ffd97a" opacity=".8"/>
-        <rect x="42" y="38" width="5" height="4" fill="#ffd97a" opacity=".8"/>
-        <line x1="96" y1="58" x2="96" y2="30" stroke="#c8ccd2" stroke-width="2"/>
-        <circle cx="96" cy="26" r="9" fill="#dfe4e8" stroke="#8a929c" stroke-width="1"/>
-        <path d="M87 26 A9 9 0 0 1 105 26" fill="none" stroke="#8a929c" stroke-width="1"/>
-        <line x1="96" y1="26" x2="104" y2="18" stroke="#c0392b" stroke-width="1.4"/>
-        <path d="M118 58 L132 40 L168 40 L182 58 Z" fill="#2a2f36"/>
-        <rect x="124" y="44" width="5" height="4" fill="#ffd97a" opacity=".9"/>
-        <rect x="134" y="44" width="5" height="4" fill="#ffd97a" opacity=".9"/>
-        <rect x="144" y="44" width="5" height="4" fill="#ffd97a" opacity=".8"/>
-        <rect x="154" y="44" width="5" height="4" fill="#ffd97a" opacity=".8"/>
-        <path d="M118 58 L182 58 L178 64 L122 64 Z" fill="#1a1e24"/>
-        <path d="M0 66 Q30 63 60 66 T120 66 T190 66" stroke="#5f8fb0" stroke-width="1" fill="none" opacity=".6"/>
-        <path d="M96 66 L100 66 L98 84 Z" fill="#dfe4e8" opacity=".28"/>
-        <path d="M158 62 L162 62 L160 80 Z" fill="#ffe9a8" opacity=".3"/>
-      </svg>
-      <span class="badge" style="background:#d07a1f">2</span>
-    </div>
-    <div class="mini">
-      <svg viewBox="0 0 190 30" preserveAspectRatio="xMidYMid slice">
-        <rect width="190" height="30" fill="#ddd6c4"/>
-        <rect x="96" width="94" height="30" fill="#bcd6e4"/>
-        <polygon points="0,4 60,6 78,14 70,26 0,26" fill="#cfc8b8"/>
-        <ellipse cx="98" cy="15" rx="6" ry="3.4" fill="#c0392b" stroke="#7a1f14" stroke-width=".8"/>
-        <circle cx="98" cy="15" r="2" fill="#c0392b" stroke="#fff" stroke-width=".8"/>
-        <rect x="3" y="3" width="56" height="10" rx="2" fill="#fff" opacity=".88"/>
-        <text x="6" y="10.5" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="7" font-weight="bold" letter-spacing=".6" fill="#2b2823">BAHRAIN</text>
+      <svg viewBox="0 0 316 92" preserveAspectRatio="xMidYMid slice">
+        <rect width="316" height="92" fill="url(#dusk)"/>
+        <circle cx="282" cy="20" r="22" fill="url(#sunGlow)"/>
+        <circle cx="282" cy="20" r="8" fill="#ffe9a8"/>
+        <circle cx="120" cy="30" r="14" fill="url(#fireGlow)"/>
+        <path d="M0 54 L316 54 L316 92 L0 92 Z" fill="url(#seaNight)"/>
+        <path d="M0 54 L316 54" stroke="#0c1e33" stroke-width="2"/>
+        <path d="M0 42 L140 42 L140 54 L0 54 Z" fill="#23282e"/>
+        <rect x="10" y="30" width="14" height="12" fill="#2e343c"/>
+        <rect x="32" y="24" width="16" height="18" fill="#2e343c"/>
+        <rect x="56" y="32" width="12" height="10" fill="#2e343c"/>
+        <rect x="76" y="28" width="14" height="14" fill="#2e343c"/>
+        <rect x="100" y="34" width="12" height="8" fill="#2e343c"/>
+        <g fill="#ffd97a">
+          <rect x="12" y="33" width="7" height="4"/><rect x="34" y="27" width="7" height="4"/><rect x="34" y="34" width="7" height="4"/>
+          <rect x="58" y="34" width="6" height="4"/><rect x="78" y="31" width="6" height="4"/><rect x="102" y="36" width="6" height="4"/>
+        </g>
+        <line x1="180" y1="54" x2="180" y2="26" stroke="#c8ccd2" stroke-width="2"/>
+        <circle cx="180" cy="22" r="10" fill="#dfe4e8" stroke="#8a929c" stroke-width="1"/>
+        <path d="M170 22 A10 10 0 0 1 190 22" fill="none" stroke="#8a929c" stroke-width="1"/>
+        <line x1="180" y1="22" x2="190" y2="13" stroke="#c0392b" stroke-width="1.4"/>
+        <path d="M216 54 L234 34 L288 34 L306 54 Z" fill="#2a2f36"/>
+        <rect x="224" y="38" width="6" height="4" fill="#ffd97a" opacity=".9"/>
+        <rect x="238" y="38" width="6" height="4" fill="#ffd97a" opacity=".9"/>
+        <rect x="252" y="38" width="6" height="4" fill="#ffd97a" opacity=".8"/>
+        <rect x="266" y="38" width="6" height="4" fill="#ffd97a" opacity=".8"/>
+        <rect x="280" y="38" width="6" height="4" fill="#ffd97a" opacity=".8"/>
+        <path d="M216 54 L306 54 L300 62 L222 62 Z" fill="#1a1e24"/>
+        <path d="M0 62 Q40 59 80 62 T160 62 T240 62 T316 62" stroke="#5f8fb0" stroke-width="1" fill="none" opacity=".6"/>
+        <path d="M180 62 L185 62 L182 82 Z" fill="#dfe4e8" opacity=".28"/>
+        <path d="M282 58 L286 58 L284 78 Z" fill="#ffe9a8" opacity=".3"/>
+        <g fill="#fff" opacity=".85">
+          <circle cx="150" cy="12" r="1.6"/><circle cx="210" cy="10" r="1.6"/><circle cx="250" cy="14" r="1.4"/>
+        </g>
+        <path d="M146 14 L156 10 M206 12 L216 8 M246 16 L256 12" stroke="#fff" stroke-width="1" opacity=".6"/>
       </svg>
     </div>
-    <div class="kick" style="color:#d07a1f">MIDEAST &middot; IRAN&ndash;US</div>
+    <div class="kick" style="color:#d07a1f"><span class="hb" style="background:#d07a1f">2</span>MIDEAST &middot; IRAN&ndash;US</div>
     <h3>Iran fires drones at US radar base in Bahrain</h3>
     <p>Third attack in days; Bahrain intercepted it; US jets hit Qeshm.</p>
   </article>
 
-  <!-- 3 · SHENZHEN -->
-  <article class="story" style="border-top-color:#c0392b">
+  <!-- HERO 3 · SHENZHEN -->
+  <article style="border-top-color:#c0392b">
     <div class="art">
-      <svg viewBox="0 0 190 96" preserveAspectRatio="xMidYMid slice">
-        <rect width="190" height="96" fill="url(#sunset)"/>
-        <circle cx="158" cy="24" r="22" fill="url(#sunGlow)"/>
-        <circle cx="158" cy="24" r="9" fill="#fff3c4"/>
-        <path d="M0 96 L0 62 L14 62 L14 48 L26 48 L26 66 L38 66 L38 40 L52 40 L52 70 L64 70 L64 52 L78 52 L78 66 L92 66 L92 34 L106 34 L106 60 L120 60 L120 46 L134 46 L134 68 L148 68 L148 56 L162 56 L162 70 L176 70 L176 62 L190 62 L190 96 Z" fill="#5a2a1e"/>
-        <path d="M0 96 L0 74 L20 74 L20 60 L36 60 L36 78 L58 78 L58 64 L80 64 L80 80 L104 80 L104 66 L126 66 L126 80 L150 80 L150 68 L172 68 L172 78 L190 78 L190 96 Z" fill="#3a1a12"/>
+      <svg viewBox="0 0 316 92" preserveAspectRatio="xMidYMid slice">
+        <rect width="316" height="92" fill="url(#sunset)"/>
+        <circle cx="282" cy="20" r="20" fill="url(#sunGlow)"/>
+        <circle cx="282" cy="20" r="8" fill="#fff3c4"/>
+        <g font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="9" font-weight="bold">
+          <rect x="16" y="8" width="30" height="16" fill="#c0392b"/><text x="31" y="19.5" text-anchor="middle" fill="#fff">CN</text>
+          <rect x="54" y="8" width="30" height="16" fill="#2b5ea7"/><text x="69" y="19.5" text-anchor="middle" fill="#fff">US</text>
+          <rect x="92" y="8" width="30" height="16" fill="#fff" stroke="#999" stroke-width=".5"/><text x="107" y="19.5" text-anchor="middle" fill="#2b5ea7">RU</text>
+        </g>
+        <path d="M46 24 L46 8 M84 24 L84 8 M122 24 L122 8" stroke="#3a1a12" stroke-width="1"/>
+        <path d="M0 92 L0 56 L18 56 L18 42 L34 42 L34 60 L50 60 L50 34 L68 34 L68 64 L84 64 L84 46 L100 46 L100 60 L118 60 L118 30 L136 30 L136 56 L152 56 L152 42 L168 42 L168 62 L186 62 L186 50 L202 50 L202 64 L220 64 L220 54 L236 54 L236 66 L254 66 L254 58 L272 58 L272 68 L290 68 L290 60 L316 60 L316 92 Z" fill="#5a2a1e"/>
+        <path d="M0 92 L0 70 L26 70 L26 56 L46 56 L46 74 L70 74 L70 60 L94 60 L94 76 L120 76 L120 62 L144 62 L144 76 L170 76 L170 64 L194 64 L194 76 L220 76 L220 66 L246 66 L246 76 L272 76 L272 68 L296 68 L296 76 L316 76 L316 92 Z" fill="#3a1a12"/>
         <g fill="#ffd97a">
-          <rect x="42" y="46" width="3" height="4"/><rect x="42" y="54" width="3" height="4"/>
-          <rect x="96" y="40" width="3" height="4"/><rect x="96" y="48" width="3" height="4"/><rect x="100" y="44" width="3" height="4"/>
-          <rect x="124" y="52" width="3" height="4"/><rect x="138" y="52" width="3" height="4"/>
-          <rect x="152" y="62" width="3" height="4"/><rect x="166" y="62" width="3" height="4"/>
-          <rect x="68" y="58" width="3" height="4"/><rect x="18" y="54" width="3" height="4"/>
-          <rect x="110" y="66" width="3" height="4"/><rect x="84" y="70" width="3" height="4"/>
+          <rect x="54" y="40" width="3" height="4"/><rect x="54" y="48" width="3" height="4"/>
+          <rect x="122" y="36" width="3" height="4"/><rect x="122" y="44" width="3" height="4"/><rect x="126" y="40" width="3" height="4"/>
+          <rect x="156" y="48" width="3" height="4"/><rect x="172" y="48" width="3" height="4"/>
+          <rect x="190" y="56" width="3" height="4"/><rect x="206" y="56" width="3" height="4"/>
+          <rect x="224" y="60" width="3" height="4"/><rect x="240" y="60" width="3" height="4"/>
+          <rect x="88" y="52" width="3" height="4"/><rect x="22" y="48" width="3" height="4"/>
+          <rect x="140" y="62" width="3" height="4"/><rect x="106" y="66" width="3" height="4"/>
         </g>
-        <g font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="8" font-weight="bold">
-          <rect x="18" y="10" width="26" height="14" fill="#c0392b"/><text x="31" y="20" text-anchor="middle" fill="#fff">CN</text>
-          <rect x="52" y="10" width="26" height="14" fill="#2b5ea7"/><text x="65" y="20" text-anchor="middle" fill="#fff">US</text>
-          <rect x="86" y="10" width="26" height="14" fill="#fff" stroke="#999" stroke-width=".5"/><text x="99" y="20" text-anchor="middle" fill="#2b5ea7">RU</text>
-        </g>
-        <path d="M44 24 L44 10 M78 24 L78 10 M112 24 L112 10" stroke="#3a1a12" stroke-width="1"/>
-        <rect y="88" width="190" height="8" fill="#2a120c" opacity=".7"/>
-        <path d="M0 90 Q50 87 100 90 T190 90" stroke="#ffd27a" stroke-width="1" fill="none" opacity=".5"/>
-      </svg>
-      <span class="badge" style="background:#c0392b">3</span>
-    </div>
-    <div class="mini">
-      <svg viewBox="0 0 190 30" preserveAspectRatio="xMidYMid slice">
-        <rect width="190" height="30" fill="#ddd6c4"/>
-        <polygon points="30,8 60,4 100,6 140,4 170,10 175,18 150,26 110,24 70,27 40,24 20,16" fill="#c0392b" stroke="#7a1f14" stroke-width=".8"/>
-        <circle cx="120" cy="14" r="4.4" fill="none" stroke="#17130e" stroke-width="1.2"/>
-        <circle cx="120" cy="14" r="2.2" fill="#c0392b" stroke="#fff" stroke-width=".8"/>
-        <rect x="3" y="3" width="48" height="10" rx="2" fill="#fff" opacity=".88"/>
-        <text x="6" y="10.5" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="7" font-weight="bold" letter-spacing=".6" fill="#2b2823">CHINA</text>
+        <rect y="84" width="316" height="8" fill="#2a120c" opacity=".7"/>
+        <path d="M0 86 Q60 83 120 86 T240 86 T316 86" stroke="#ffd27a" stroke-width="1" fill="none" opacity=".5"/>
       </svg>
     </div>
-    <div class="kick" style="color:#c0392b">ASIA &middot; SUMMIT</div>
+    <div class="kick" style="color:#c0392b"><span class="hb" style="background:#c0392b">3</span>ASIA &middot; SUMMIT</div>
     <h3>Xi to meet Trump and Putin in Shenzhen</h3>
     <p>First three-way meeting, set for Thursday at APEC.</p>
   </article>
+
+</div><!-- /hero -->
+
+<div class="sec"><h2>10 BIGGEST STORIES</h2><span class="rng">&middot; 4&ndash;13</span><div class="rule"></div></div>
+
+<div class="big">
 
   <!-- 4 · COP31 -->
   <article class="story" style="border-top-color:#2e8b57">
@@ -346,9 +342,9 @@
     <div class="mini">
       <svg viewBox="0 0 190 30" preserveAspectRatio="xMidYMid slice">
         <rect width="190" height="30" fill="#ddd6c4"/>
-        <polygon points="15,14 40,8 80,6 130,8 170,12 175,18 140,22 90,24 50,22 20,18" fill="#c0392b" stroke="#7a1f14" stroke-width=".8"/>
-        <circle cx="95" cy="14" r="4.4" fill="none" stroke="#17130e" stroke-width="1.2"/>
-        <circle cx="95" cy="14" r="2.2" fill="#c0392b" stroke="#fff" stroke-width=".8"/>
+        <polygon points="12,14 35,8 70,6 110,5 150,8 180,12 175,20 140,22 100,24 60,22 25,20" fill="#c0392b" stroke="#7a1f14" stroke-width=".8"/>
+        <circle cx="58" cy="18" r="4.4" fill="none" stroke="#17130e" stroke-width="1.2"/>
+        <circle cx="58" cy="18" r="2.2" fill="#c0392b" stroke="#fff" stroke-width=".8"/>
         <rect x="3" y="3" width="54" height="10" rx="2" fill="#fff" opacity=".88"/>
         <text x="6" y="10.5" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="7" font-weight="bold" letter-spacing=".6" fill="#2b2823">TURKEY</text>
       </svg>
@@ -395,9 +391,9 @@
     <div class="mini">
       <svg viewBox="0 0 190 30" preserveAspectRatio="xMidYMid slice">
         <rect width="190" height="30" fill="#ddd6c4"/>
-        <polygon points="70,4 120,4 130,12 120,26 85,26 68,16" fill="#c0392b" stroke="#7a1f14" stroke-width=".8"/>
-        <circle cx="98" cy="15" r="4.4" fill="none" stroke="#17130e" stroke-width="1.2"/>
-        <circle cx="98" cy="15" r="2.2" fill="#c0392b" stroke="#fff" stroke-width=".8"/>
+        <polygon points="30,5 70,3 100,6 105,14 95,26 60,26 35,20 28,12" fill="#c0392b" stroke="#7a1f14" stroke-width=".8"/>
+        <circle cx="70" cy="10" r="4.4" fill="none" stroke="#17130e" stroke-width="1.2"/>
+        <circle cx="70" cy="10" r="2.2" fill="#c0392b" stroke="#fff" stroke-width=".8"/>
         <rect x="3" y="3" width="60" height="10" rx="2" fill="#fff" opacity=".88"/>
         <text x="6" y="10.5" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="7" font-weight="bold" letter-spacing=".6" fill="#2b2823">DR CONGO</text>
       </svg>
@@ -438,7 +434,7 @@
     <div class="mini">
       <svg viewBox="0 0 190 30" preserveAspectRatio="xMidYMid slice">
         <rect width="190" height="30" fill="#ddd6c4"/>
-        <polygon points="15,8 45,5 90,6 140,5 172,10 175,20 150,26 100,24 60,27 30,24 12,16" fill="#c0392b" stroke="#7a1f14" stroke-width=".8"/>
+        <polygon points="10,10 35,5 70,4 110,3 150,5 178,8 172,18 150,24 120,26 85,25 50,26 20,22 8,16" fill="#c0392b" stroke="#7a1f14" stroke-width=".8"/>
         <circle cx="140" cy="14" r="4.4" fill="none" stroke="#17130e" stroke-width="1.2"/>
         <circle cx="140" cy="14" r="2.2" fill="#c0392b" stroke="#fff" stroke-width=".8"/>
         <rect x="3" y="3" width="34" height="10" rx="2" fill="#fff" opacity=".88"/>
@@ -492,7 +488,7 @@
     <div class="mini">
       <svg viewBox="0 0 190 30" preserveAspectRatio="xMidYMid slice">
         <rect width="190" height="30" fill="#ddd6c4"/>
-        <polygon points="85,4 115,6 120,16 105,26 88,22 82,12" fill="#c0392b" stroke="#7a1f14" stroke-width=".8"/>
+        <polygon points="80,4 115,5 122,14 108,26 86,22 80,12" fill="#c0392b" stroke="#7a1f14" stroke-width=".8"/>
         <circle cx="100" cy="14" r="4.4" fill="none" stroke="#17130e" stroke-width="1.2"/>
         <circle cx="100" cy="14" r="2.2" fill="#c0392b" stroke="#fff" stroke-width=".8"/>
         <rect x="3" y="3" width="76" height="10" rx="2" fill="#fff" opacity=".88"/>
@@ -532,7 +528,7 @@
     <div class="mini">
       <svg viewBox="0 0 190 30" preserveAspectRatio="xMidYMid slice">
         <rect width="190" height="30" fill="#ddd6c4"/>
-        <polygon points="15,14 40,8 80,6 130,8 170,12 175,18 140,22 90,24 50,22 20,18" fill="#c0392b" stroke="#7a1f14" stroke-width=".8"/>
+        <polygon points="12,14 35,8 70,6 110,5 150,8 180,12 175,20 140,22 100,24 60,22 25,20" fill="#c0392b" stroke="#7a1f14" stroke-width=".8"/>
         <circle cx="45" cy="12" r="4.4" fill="none" stroke="#17130e" stroke-width="1.2"/>
         <circle cx="45" cy="12" r="2.2" fill="#c0392b" stroke="#fff" stroke-width=".8"/>
         <rect x="3" y="3" width="54" height="10" rx="2" fill="#fff" opacity=".88"/>
@@ -577,7 +573,7 @@
       <svg viewBox="0 0 190 30" preserveAspectRatio="xMidYMid slice">
         <rect width="190" height="30" fill="#ddd6c4"/>
         <rect x="96" width="94" height="30" fill="#bcd6e4"/>
-        <polygon points="60,4 120,4 130,10 100,26 75,26 65,12" fill="#cfc8b8"/>
+        <polygon points="55,4 120,4 135,10 105,26 70,26 60,12" fill="#cfc8b8"/>
         <circle cx="140" cy="16" r="4.6" fill="none" stroke="#17130e" stroke-width="1.2"/>
         <circle cx="140" cy="16" r="2.4" fill="#c0392b" stroke="#fff" stroke-width=".8"/>
         <rect x="3" y="3" width="82" height="10" rx="2" fill="#fff" opacity=".88"/>
@@ -619,9 +615,9 @@
     <div class="mini">
       <svg viewBox="0 0 190 30" preserveAspectRatio="xMidYMid slice">
         <rect width="190" height="30" fill="#ddd6c4"/>
-        <polygon points="30,10 90,6 150,8 170,16 140,24 80,26 40,22" fill="#c0392b" stroke="#7a1f14" stroke-width=".8"/>
-        <circle cx="120" cy="16" r="4.4" fill="none" stroke="#17130e" stroke-width="1.2"/>
-        <circle cx="120" cy="16" r="2.2" fill="#c0392b" stroke="#fff" stroke-width=".8"/>
+        <polygon points="25,10 90,6 150,8 172,16 140,24 80,26 35,22" fill="#c0392b" stroke="#7a1f14" stroke-width=".8"/>
+        <circle cx="67" cy="20" r="4.4" fill="none" stroke="#17130e" stroke-width="1.2"/>
+        <circle cx="67" cy="20" r="2.2" fill="#c0392b" stroke="#fff" stroke-width=".8"/>
         <rect x="3" y="3" width="48" height="10" rx="2" fill="#fff" opacity=".88"/>
         <text x="6" y="10.5" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="7" font-weight="bold" letter-spacing=".6" fill="#2b2823">YEMEN</text>
       </svg>
@@ -631,86 +627,129 @@
     <p>Government forces pull back; rebels about 60 km from Aden.</p>
   </article>
 
-</div><!-- /big -->
-
-<div class="sec"><h2>MORE STORIES</h2><span class="rng">&middot; 11&ndash;18</span><div class="rule"></div></div>
-
-<div class="more">
-
   <!-- 11 · RWANDA HUB -->
-  <article class="item">
-    <div class="band">
-      <svg viewBox="0 0 190 34" preserveAspectRatio="xMidYMid slice">
-        <rect width="190" height="34" fill="url(#paper)"/>
-        <path d="M0 20 Q50 12 95 18 T190 16 L190 34 L0 34 Z" fill="#c9b183"/>
-        <path d="M0 26 Q60 20 120 26 T190 24 L190 34 L0 34 Z" fill="#a8895a"/>
+  <article class="story" style="border-top-color:#2e8b57">
+    <div class="art">
+      <svg viewBox="0 0 190 96" preserveAspectRatio="xMidYMid slice">
+        <rect width="190" height="96" fill="url(#paper)"/>
+        <circle cx="160" cy="24" r="16" fill="url(#sunGlow)"/>
+        <circle cx="160" cy="24" r="7" fill="#ffe9a8"/>
+        <path d="M0 58 Q40 40 80 52 T190 46 L190 96 L0 96 Z" fill="#7fae7a"/>
+        <path d="M0 70 Q50 56 100 66 T190 62 L190 96 L0 96 Z" fill="#5a8a52"/>
+        <path d="M0 82 Q60 72 120 82 T190 78 L190 96 L0 96 Z" fill="#3d6b35"/>
         <g fill="#3a2c22">
-          <rect x="18" y="8" width="16" height="14"/><rect x="40" y="5" width="20" height="17"/>
-          <rect x="66" y="10" width="14" height="12"/><rect x="120" y="7" width="18" height="15"/>
-          <rect x="144" y="10" width="16" height="12"/>
+          <rect x="20" y="50" width="14" height="18"/><rect x="40" y="44" width="12" height="24"/>
+          <rect x="58" y="52" width="16" height="16"/><rect x="120" y="48" width="14" height="20"/>
+          <rect x="140" y="54" width="12" height="14"/>
         </g>
         <g fill="#ffd97a">
-          <rect x="22" y="11" width="3" height="3"/><rect x="44" y="8" width="3" height="3"/><rect x="70" y="13" width="3" height="3"/>
-          <rect x="124" y="10" width="3" height="3"/><rect x="148" y="13" width="3" height="3"/>
+          <rect x="24" y="54" width="3" height="3"/><rect x="44" y="48" width="3" height="3"/>
+          <rect x="62" y="56" width="3" height="3"/><rect x="124" y="52" width="3" height="3"/>
         </g>
-        <circle cx="172" cy="10" r="7" fill="url(#sunGlow)"/>
-        <circle cx="172" cy="10" r="3.4" fill="#ffe9a8"/>
-        <path d="M92 22 L108 22 L104 28 L112 28" stroke="#c0392b" stroke-width="1.6" fill="none"/>
+        <path d="M0 88 Q60 82 120 88 T190 86" stroke="#c0392b" stroke-width="1.6" fill="none"/>
       </svg>
       <span class="badge" style="background:#2e8b57">11</span>
     </div>
+    <div class="mini">
+      <svg viewBox="0 0 190 30" preserveAspectRatio="xMidYMid slice">
+        <rect width="190" height="30" fill="#ddd6c4"/>
+        <polygon points="70,5 110,4 128,10 122,24 95,26 72,20 66,12" fill="#c0392b" stroke="#7a1f14" stroke-width=".8"/>
+        <circle cx="98" cy="14" r="4.4" fill="none" stroke="#17130e" stroke-width="1.2"/>
+        <circle cx="98" cy="14" r="2.2" fill="#c0392b" stroke="#fff" stroke-width=".8"/>
+        <rect x="3" y="3" width="58" height="10" rx="2" fill="#fff" opacity=".88"/>
+        <text x="6" y="10.5" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="7" font-weight="bold" letter-spacing=".6" fill="#2b2823">RWANDA</text>
+      </svg>
+    </div>
     <div class="kick" style="color:#2e8b57">EUROPE&ndash;AFRICA &middot; MIGRATION</div>
-    <h4>Five EU states plan Rwanda return hub</h4>
+    <h3>Five EU states plan Rwanda return hub</h3>
     <p>Germany, Denmark, Austria, Greece and the Netherlands agree a joint facility.</p>
   </article>
 
   <!-- 12 · AI CHIPS -->
-  <article class="item">
-    <div class="band">
-      <svg viewBox="0 0 190 34" preserveAspectRatio="xMidYMid slice">
-        <rect width="190" height="34" fill="url(#chart)"/>
-        <path d="M6 28 L48 20 L84 22 L122 10 L160 12 L184 4" fill="none" stroke="#5eead4" stroke-width="2"/>
-        <circle cx="6" cy="28" r="2.4" fill="#5eead4"/><circle cx="84" cy="22" r="2.4" fill="#5eead4"/><circle cx="184" cy="4" r="2.4" fill="#5eead4"/>
-        <rect x="14" y="4" width="34" height="11" rx="2" fill="#0a241c" opacity=".85"/>
-        <text x="31" y="12.5" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="8" font-weight="bold" fill="#5eead4">+103%</text>
-        <g fill="#2e8b57"><rect x="120" y="20" width="8" height="10"/><rect x="132" y="16" width="8" height="14"/><rect x="144" y="22" width="8" height="8"/></g>
-        <rect x="160" y="18" width="16" height="12" rx="2" fill="#146b4a" stroke="#5eead4" stroke-width=".8"/>
-        <text x="168" y="27" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="7" font-weight="bold" fill="#bff5e4">AI</text>
+  <article class="story" style="border-top-color:#c0392b">
+    <div class="art">
+      <svg viewBox="0 0 190 96" preserveAspectRatio="xMidYMid slice">
+        <rect width="190" height="96" fill="url(#sunset)"/>
+        <circle cx="160" cy="20" r="16" fill="url(#sunGlow)"/>
+        <circle cx="160" cy="20" r="7" fill="#fff3c4"/>
+        <path d="M0 96 L0 58 L16 58 L16 44 L30 44 L30 62 L44 62 L44 36 L58 36 L58 66 L72 66 L72 48 L86 48 L86 62 L100 62 L100 32 L114 32 L114 58 L128 58 L128 44 L142 44 L142 64 L156 64 L156 52 L170 52 L170 66 L190 66 L190 96 Z" fill="#5a2a1e"/>
+        <path d="M0 96 L0 74 L24 74 L24 62 L44 62 L44 78 L66 78 L66 66 L90 66 L90 80 L114 80 L114 68 L138 68 L138 80 L164 80 L164 70 L190 70 L190 96 Z" fill="#3a1a12"/>
+        <g fill="#ffd97a">
+          <rect x="48" y="42" width="3" height="4"/><rect x="104" y="38" width="3" height="4"/><rect x="118" y="50" width="3" height="4"/>
+          <rect x="132" y="50" width="3" height="4"/><rect x="146" y="58" width="3" height="4"/><rect x="76" y="54" width="3" height="4"/>
+        </g>
+        <rect x="14" y="8" width="34" height="14" rx="2" fill="#0a241c" opacity=".9"/>
+        <text x="31" y="18.5" text-anchor="middle" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="9" font-weight="bold" fill="#5eead4">AI CHIP</text>
+        <path d="M0 90 Q50 87 100 90 T190 90" stroke="#ffd27a" stroke-width="1" fill="none" opacity=".6"/>
       </svg>
       <span class="badge" style="background:#c0392b">12</span>
     </div>
+    <div class="mini">
+      <svg viewBox="0 0 190 30" preserveAspectRatio="xMidYMid slice">
+        <rect width="190" height="30" fill="#ddd6c4"/>
+        <rect x="96" width="94" height="30" fill="#bcd6e4"/>
+        <polygon points="95,2 130,2 150,10 140,26 115,26 100,14" fill="#cfc8b8"/>
+        <ellipse cx="132" cy="24" rx="7" ry="3.6" fill="#c0392b" stroke="#7a1f14" stroke-width=".8"/>
+        <circle cx="132" cy="24" r="2" fill="#c0392b" stroke="#fff" stroke-width=".8"/>
+        <rect x="3" y="3" width="72" height="10" rx="2" fill="#fff" opacity=".88"/>
+        <text x="6" y="10.5" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="7" font-weight="bold" letter-spacing=".6" fill="#2b2823">SINGAPORE</text>
+      </svg>
+    </div>
     <div class="kick" style="color:#c0392b">ASIA &middot; TECHNOLOGY</div>
-    <h4>Singapore seeks trusted AI chip access</h4>
+    <h3>Singapore seeks trusted AI chip access</h3>
     <p>U.S. export curbs push the city-state to ask Washington for trusted supply.</p>
   </article>
 
   <!-- 13 · JAPAN JETS -->
-  <article class="item">
-    <div class="band">
-      <svg viewBox="0 0 190 34" preserveAspectRatio="xMidYMid slice">
-        <rect width="190" height="34" fill="url(#seaDay)"/>
-        <circle cx="168" cy="9" r="9" fill="url(#sunGlow)"/>
-        <circle cx="168" cy="9" r="4" fill="#ffe9a8"/>
+  <article class="story" style="border-top-color:#c0392b">
+    <div class="art">
+      <svg viewBox="0 0 190 96" preserveAspectRatio="xMidYMid slice">
+        <rect width="190" height="96" fill="url(#seaDay)"/>
+        <circle cx="162" cy="18" r="16" fill="url(#sunGlow)"/>
+        <circle cx="162" cy="18" r="7" fill="#ffe9a8"/>
         <g>
-          <path d="M20 14 L52 14 L58 18 L52 22 L20 22 L14 18 Z" fill="#2a2f36"/>
-          <path d="M52 14 L64 8 L62 18 Z" fill="#3a3f46"/>
-          <path d="M52 22 L64 28 L62 18 Z" fill="#3a3f46"/>
-          <path d="M14 18 L4 18" stroke="#fff" stroke-width="1.4" opacity=".8"/>
+          <path d="M24 30 L76 30 L86 36 L76 42 L24 42 L14 36 Z" fill="#2a2f36"/>
+          <path d="M76 30 L96 20 L92 36 Z" fill="#3a3f46"/>
+          <path d="M76 42 L96 52 L92 36 Z" fill="#3a3f46"/>
+          <path d="M14 36 L2 36" stroke="#fff" stroke-width="1.6" opacity=".8"/>
         </g>
         <g>
-          <path d="M96 24 L128 24 L134 28 L128 32 L96 32 L90 28 Z" fill="#5a4632"/>
-          <path d="M128 24 L140 18 L138 28 Z" fill="#6b5d43"/>
-          <path d="M128 32 L140 38 L138 28 Z" fill="#6b5d43"/>
+          <path d="M104 58 L156 58 L166 64 L156 70 L104 70 L94 64 Z" fill="#5a4632"/>
+          <path d="M156 58 L176 48 L172 64 Z" fill="#6b5d43"/>
+          <path d="M156 70 L176 80 L172 64 Z" fill="#6b5d43"/>
         </g>
-        <path d="M58 18 Q80 14 96 20" stroke="#fff" stroke-width="1" fill="none" opacity=".5" stroke-dasharray="4 3"/>
-        <circle cx="30" cy="6" r="2" fill="#fff" opacity=".8"/><circle cx="120" cy="8" r="1.6" fill="#fff" opacity=".7"/>
+        <path d="M86 36 Q100 32 112 40" stroke="#fff" stroke-width="1" fill="none" opacity=".5" stroke-dasharray="4 3"/>
+        <path d="M0 76 L190 76 L190 96 L0 96 Z" fill="#12395a"/>
+        <path d="M0 80 Q40 77 80 80 T190 80" stroke="#8fc0dd" stroke-width="1.4" fill="none"/>
+        <path d="M0 88 Q50 85 100 88 T190 88" stroke="#8fc0dd" stroke-width="1.2" fill="none" opacity=".7"/>
+        <circle cx="40" cy="12" r="2" fill="#fff" opacity=".8"/><circle cx="120" cy="10" r="1.6" fill="#fff" opacity=".7"/>
       </svg>
       <span class="badge" style="background:#c0392b">13</span>
     </div>
+    <div class="mini">
+      <svg viewBox="0 0 190 30" preserveAspectRatio="xMidYMid slice">
+        <rect width="190" height="30" fill="#ddd6c4"/>
+        <rect width="190" height="30" fill="#bcd6e4"/>
+        <polygon points="60,4 74,4 78,12 70,16 58,12" fill="#c0392b" stroke="#7a1f14" stroke-width=".8"/>
+        <polygon points="76,10 108,8 124,14 118,22 88,22 74,16" fill="#c0392b" stroke="#7a1f14" stroke-width=".8"/>
+        <polygon points="112,16 140,14 152,20 140,26 116,24" fill="#c0392b" stroke="#7a1f14" stroke-width=".8"/>
+        <polygon points="140,20 158,18 166,24 152,27 142,24" fill="#c0392b" stroke="#7a1f14" stroke-width=".8"/>
+        <circle cx="96" cy="14" r="4.4" fill="none" stroke="#17130e" stroke-width="1.2"/>
+        <circle cx="96" cy="14" r="2.2" fill="#c0392b" stroke="#fff" stroke-width=".8"/>
+        <rect x="3" y="3" width="48" height="10" rx="2" fill="#fff" opacity=".88"/>
+        <text x="6" y="10.5" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="7" font-weight="bold" letter-spacing=".6" fill="#2b2823">JAPAN</text>
+      </svg>
+    </div>
     <div class="kick" style="color:#c0392b">ASIA &middot; DEFENCE</div>
-    <h4>Japan scrambles jets over Russian planes</h4>
+    <h3>Japan scrambles jets over Russian planes</h3>
     <p>Tokyo protests after two Russian aircraft enter its airspace.</p>
   </article>
+
+</div><!-- /big -->
+
+<div class="sec"><h2>MORE STORIES</h2><span class="rng">&middot; 14&ndash;18</span><div class="rule"></div></div>
+
+<div class="more">
 
   <!-- 14 · UK SANCTIONS -->
   <article class="item">
@@ -844,11 +883,11 @@
 
 </div><!-- /more -->
 
-<div class="sec"><h2>PHENOMENA &middot; NATURE &amp; SKY</h2><span class="rng">&middot; 33&ndash;36</span><div class="rule"></div></div>
+<div class="sec"><h2>PHENOMENA &middot; NATURE &amp; SKY</h2><span class="rng">&middot; 40&ndash;43</span><div class="rule"></div></div>
 
 <div class="phen">
 
-  <!-- 33 · LEONIDS -->
+  <!-- 40 · LEONIDS -->
   <article class="item">
     <div class="band">
       <svg viewBox="0 0 190 34" preserveAspectRatio="xMidYMid slice">
@@ -868,14 +907,14 @@
         </g>
         <path d="M0 34 L0 28 L20 28 L34 22 L60 28 L100 28 L120 24 L150 28 L190 28 L190 34 Z" fill="#0a1030"/>
       </svg>
-      <span class="badge" style="background:#55524a">33</span>
+      <span class="badge" style="background:#55524a">40</span>
     </div>
     <div class="kick" style="color:#55524a">SKY &middot; METEORS</div>
     <h4>Leonid meteors peak tonight</h4>
     <p>Up to 15 an hour from Comet 55P/Tempel-Tuttle; best before dawn.</p>
   </article>
 
-  <!-- 34 · AURORA -->
+  <!-- 41 · AURORA -->
   <article class="item">
     <div class="band">
       <svg viewBox="0 0 190 34" preserveAspectRatio="xMidYMid slice">
@@ -890,14 +929,14 @@
         <path d="M0 34 L0 27 L30 27 L48 21 L80 27 L120 27 L140 22 L170 27 L190 27 L190 34 Z" fill="#dfe9f0"/>
         <path d="M0 30 L40 30 L60 26 L110 30 L150 30 L190 30" stroke="#fff" stroke-width="1" fill="none" opacity=".7"/>
       </svg>
-      <span class="badge" style="background:#7d4fa3">34</span>
+      <span class="badge" style="background:#7d4fa3">41</span>
     </div>
     <div class="kick" style="color:#7d4fa3">SKY &middot; AURORA</div>
     <h4>Aurora borealis over 12 US states</h4>
     <p>Geomagnetic storm G1 (Kp 4.67) lights the northern sky tonight.</p>
   </article>
 
-  <!-- 35 · IOTO -->
+  <!-- 42 · IOTO -->
   <article class="item">
     <div class="band">
       <svg viewBox="0 0 190 34" preserveAspectRatio="xMidYMid slice">
@@ -913,14 +952,14 @@
         <path d="M0 31 Q50 29 100 31 T190 31" stroke="#ff8c2e" stroke-width="1" fill="none" opacity=".5"/>
         <rect y="28" width="190" height="6" fill="#0c1e33" opacity=".55"/>
       </svg>
-      <span class="badge" style="background:#c0392b">35</span>
+      <span class="badge" style="background:#c0392b">42</span>
     </div>
     <div class="kick" style="color:#c0392b">ASIA &middot; VOLCANO</div>
     <h4>Eruption builds 50 hectares of new land</h4>
     <p>Off Ioto, Japan; the new ground now joins the island.</p>
   </article>
 
-  <!-- 36 · NZ QUAKE -->
+  <!-- 43 · NZ QUAKE -->
   <article class="item">
     <div class="band">
       <svg viewBox="0 0 190 34" preserveAspectRatio="xMidYMid slice">
@@ -931,7 +970,7 @@
         <path d="M6 30 L22 30 L28 18 L36 30 L44 24 L50 30 L64 30 L70 14 L78 30 L88 26 L94 30 L108 30 L114 20 L122 30 L136 30" fill="none" stroke="#c0392b" stroke-width="1.8" stroke-linejoin="round"/>
         <text x="150" y="12" font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="9" font-weight="bold" fill="#8a1f1f">M5.7</text>
       </svg>
-      <span class="badge" style="background:#2a9d8f">36</span>
+      <span class="badge" style="background:#2a9d8f">43</span>
     </div>
     <div class="kick" style="color:#2a9d8f">OCEANIA &middot; QUAKE</div>
     <h4>M5.7 quake shakes New Zealand</h4>
@@ -945,6 +984,24 @@
   <section class="mapbox">
     <h2>WHERE IT HAPPENED &mdash; TRUE LOCATIONS</h2>
     <svg viewBox="0 0 470 118" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <pattern id="landDots" width="4.5" height="4.5" patternUnits="userSpaceOnUse">
+          <circle cx="2.25" cy="2.25" r="1.7" fill="#96896d"/>
+        </pattern>
+        <clipPath id="landClip">
+          <polygon points="18,22 34,13 66,9 100,9 128,14 146,20 150,28 136,34 142,44 132,52 118,50 104,42 88,38 66,34 44,30 24,27"/>
+          <polygon points="152,6 172,4 180,10 168,18 154,14"/>
+          <polygon points="158,58 176,52 194,58 200,72 188,92 176,100 164,88 154,72"/>
+          <polygon points="228,20 244,14 262,16 272,22 266,30 250,34 236,32 226,26"/>
+          <polygon points="228,22 234,20 238,26 232,30"/>
+          <polygon points="238,40 262,36 284,40 296,50 292,64 280,78 264,82 250,72 240,56"/>
+          <polygon points="272,14 310,8 350,8 390,12 420,18 436,26 428,36 410,44 392,40 372,48 352,44 336,50 318,44 300,40 286,32 274,24"/>
+          <polygon points="412,32 418,30 422,40 418,50 412,46"/>
+          <polygon points="392,66 420,64 438,70 432,82 410,84 396,76"/>
+          <polygon points="452,84 458,82 460,92 454,94"/>
+          <ellipse cx="360" cy="58" rx="6" ry="3"/><ellipse cx="372" cy="62" rx="5" ry="2.6"/><ellipse cx="352" cy="64" rx="4" ry="2.4"/>
+        </clipPath>
+      </defs>
       <rect width="470" height="118" fill="#d3e2ea"/>
       <g stroke="#b8cdd9" stroke-width=".7">
         <line x1="78" y1="0" x2="78" y2="118"/><line x1="157" y1="0" x2="157" y2="118"/>
@@ -952,19 +1009,7 @@
         <line x1="392" y1="0" x2="392" y2="118"/>
         <line x1="0" y1="29.5" x2="470" y2="29.5"/><line x1="0" y1="59" x2="470" y2="59"/><line x1="0" y1="88.5" x2="470" y2="88.5"/>
       </g>
-      <g fill="#ddd6c2" stroke="#a89e83" stroke-width=".9">
-        <polygon points="18,22 34,13 66,9 100,9 128,14 146,20 150,28 136,34 142,44 132,52 118,50 104,42 88,38 66,34 44,30 24,27"/>
-        <polygon points="152,6 172,4 180,10 168,18 154,14"/>
-        <polygon points="158,58 176,52 194,58 200,72 188,92 176,100 164,88 154,72"/>
-        <polygon points="228,20 244,14 262,16 272,22 266,30 250,34 236,32 226,26"/>
-        <polygon points="228,22 234,20 238,26 232,30"/>
-        <polygon points="238,40 262,36 284,40 296,50 292,64 280,78 264,82 250,72 240,56"/>
-        <polygon points="272,14 310,8 350,8 390,12 420,18 436,26 428,36 410,44 392,40 372,48 352,44 336,50 318,44 300,40 286,32 274,24"/>
-        <polygon points="412,32 418,30 422,40 418,50 412,46"/>
-        <polygon points="392,66 420,64 438,70 432,82 410,84 396,76"/>
-        <polygon points="452,84 458,82 460,92 454,94"/>
-        <ellipse cx="360" cy="58" rx="6" ry="3"/><ellipse cx="372" cy="62" rx="5" ry="2.6"/><ellipse cx="352" cy="64" rx="4" ry="2.4"/>
-      </g>
+      <g clip-path="url(#landClip)"><rect width="470" height="118" fill="url(#landDots)"/></g>
       <!-- leader lines from true spot to offset badge -->
       <g stroke="#4a443c" stroke-width=".9" opacity=".8">
         <line x1="282.7" y1="29.3" x2="290" y2="24"/><line x1="301.1" y1="41.8" x2="298" y2="38"/>
@@ -975,9 +1020,12 @@
         <line x1="124.8" y1="36.9" x2="110" y2="44"/><line x1="138.4" y1="32.3" x2="152" y2="42"/>
         <line x1="302.2" y1="42.4" x2="314" y2="48"/><line x1="280" y1="38.4" x2="270" y2="52"/>
         <line x1="308.8" y1="41.6" x2="316" y2="34"/><line x1="234.9" y1="25.2" x2="218" y2="38"/>
-        <line x1="134.9" y1="33.4" x2="114" y2="18"/><line x1="243" y1="28.7" x2="250" y2="16"/>
-        <line x1="283" y1="59.9" x2="296" y2="74"/><line x1="296" y1="42.9" x2="306" y2="60"/>
-        <line x1="419.5" y1="42.7" x2="426" y2="52"/>
+        <line x1="234.9" y1="25.2" x2="214" y2="18"/><line x1="134.9" y1="33.4" x2="114" y2="18"/>
+        <line x1="243" y1="28.7" x2="266" y2="8"/><line x1="283" y1="59.9" x2="296" y2="74"/>
+        <line x1="296" y1="42.9" x2="306" y2="60"/><line x1="238.1" y1="27" x2="206" y2="8"/>
+        <line x1="238.1" y1="27" x2="226" y2="8"/><line x1="272.9" y1="30.9" x2="300" y2="8"/>
+        <line x1="124.7" y1="33.4" x2="104" y2="26"/><line x1="249" y1="19.7" x2="246" y2="8"/>
+        <line x1="272.7" y1="28.2" x2="284" y2="10"/><line x1="419.5" y1="42.7" x2="426" y2="52"/>
       </g>
       <!-- true-location dots -->
       <g stroke="#fff" stroke-width=".7">
@@ -990,7 +1038,15 @@
         <circle cx="308.8" cy="41.6" r="2.2" fill="#d07a1f"/><circle cx="234.9" cy="25.2" r="2.2" fill="#2b5ea7"/>
         <circle cx="134.9" cy="33.4" r="2.2" fill="#7d4fa3"/><circle cx="243" cy="28.7" r="2.2" fill="#2b5ea7"/>
         <circle cx="283" cy="59.9" r="2.2" fill="#2e8b57"/><circle cx="296" cy="42.9" r="2.2" fill="#d07a1f"/>
-        <circle cx="419.5" cy="42.7" r="2.2" fill="#c0392b"/>
+        <circle cx="419.5" cy="42.7" r="2.2" fill="#c0392b"/><circle cx="384" cy="44.2" r="2.2" fill="#c0392b"/>
+        <circle cx="265.9" cy="60.9" r="2.2" fill="#2e8b57"/><circle cx="353" cy="43.4" r="2.2" fill="#c0392b"/>
+        <circle cx="370.5" cy="58.1" r="2.2" fill="#c0392b"/><circle cx="417.4" cy="35.6" r="2.2" fill="#c0392b"/>
+        <circle cx="259.8" cy="27.9" r="2.2" fill="#2b5ea7"/><circle cx="347.4" cy="22.7" r="2.2" fill="#c0392b"/>
+        <circle cx="178.6" cy="74" r="2.2" fill="#7d4fa3"/><circle cx="330" cy="46.5" r="2.2" fill="#c0392b"/>
+        <circle cx="78.3" cy="19.7" r="2.2" fill="#7d4fa3"/><circle cx="459" cy="87.1" r="2.2" fill="#2a9d8f"/>
+        <circle cx="238.1" cy="27" r="2.2" fill="#2b5ea7"/><circle cx="272.9" cy="30.9" r="2.2" fill="#2b5ea7"/>
+        <circle cx="223.1" cy="51.5" r="2.2" fill="#2e8b57"/><circle cx="124.7" cy="33.4" r="2.2" fill="#7d4fa3"/>
+        <circle cx="249" cy="19.7" r="2.2" fill="#2b5ea7"/><circle cx="272.7" cy="28.2" r="2.2" fill="#2b5ea7"/>
       </g>
       <!-- numbered badges -->
       <g font-family="Liberation Sans, DejaVu Sans, sans-serif" font-size="7.5" font-weight="bold" fill="#fff" text-anchor="middle">
@@ -1007,7 +1063,7 @@
         <circle cx="272" cy="72" r="6" fill="#2e8b57" stroke="#fff" stroke-width="1.2"/><text x="272" y="74.6">11</text>
         <circle cx="370.5" cy="58.1" r="6" fill="#c0392b" stroke="#fff" stroke-width="1.2"/><text x="370.5" y="60.7">12</text>
         <circle cx="417.4" cy="35.6" r="6" fill="#c0392b" stroke="#fff" stroke-width="1.2"/><text x="417.4" y="38.2">13</text>
-        <circle cx="234.9" cy="25.2" r="6" fill="#2b5ea7" stroke="#fff" stroke-width="1.2"/><text x="234.9" y="27.8">14</text>
+        <circle cx="214" cy="18" r="6" fill="#2b5ea7" stroke="#fff" stroke-width="1.2"/><text x="214" y="20.6">14</text>
         <circle cx="122" cy="32" r="6" fill="#7d4fa3" stroke="#fff" stroke-width="1.2"/><text x="122" y="34.6">15</text>
         <circle cx="128" cy="44" r="6" fill="#7d4fa3" stroke="#fff" stroke-width="1.2"/><text x="128" y="46.6">16</text>
         <circle cx="110" cy="44" r="6" fill="#7d4fa3" stroke="#fff" stroke-width="1.2"/><text x="110" y="46.6">17</text>
@@ -1022,13 +1078,20 @@
         <circle cx="218" cy="38" r="6" fill="#2b5ea7" stroke="#fff" stroke-width="1.2"/><text x="218" y="40.6">27</text>
         <circle cx="330" cy="46.5" r="6" fill="#c0392b" stroke="#fff" stroke-width="1.2"/><text x="330" y="49.1">28</text>
         <circle cx="114" cy="18" r="6" fill="#7d4fa3" stroke="#fff" stroke-width="1.2"/><text x="114" y="20.6">29</text>
-        <circle cx="250" cy="16" r="6" fill="#2b5ea7" stroke="#fff" stroke-width="1.2"/><text x="250" y="18.6">30</text>
+        <circle cx="266" cy="8" r="6" fill="#2b5ea7" stroke="#fff" stroke-width="1.2"/><text x="266" y="10.6">30</text>
         <circle cx="296" cy="74" r="6" fill="#2e8b57" stroke="#fff" stroke-width="1.2"/><text x="296" y="76.6">31</text>
         <circle cx="306" cy="60" r="6" fill="#d07a1f" stroke="#fff" stroke-width="1.2"/><text x="306" y="62.6">32</text>
-        <circle cx="205" cy="10" r="6" fill="#55524a" stroke="#fff" stroke-width="1.2"/><text x="205" y="12.6">33</text>
-        <circle cx="78.3" cy="19.7" r="6" fill="#7d4fa3" stroke="#fff" stroke-width="1.2"/><text x="78.3" y="22.3">34</text>
-        <circle cx="426" cy="52" r="6" fill="#c0392b" stroke="#fff" stroke-width="1.2"/><text x="426" y="54.6">35</text>
-        <circle cx="459" cy="87.1" r="6" fill="#2a9d8f" stroke="#fff" stroke-width="1.2"/><text x="459" y="89.7">36</text>
+        <circle cx="206" cy="8" r="6" fill="#2b5ea7" stroke="#fff" stroke-width="1.2"/><text x="206" y="10.6">33</text>
+        <circle cx="226" cy="8" r="6" fill="#2b5ea7" stroke="#fff" stroke-width="1.2"/><text x="226" y="10.6">34</text>
+        <circle cx="300" cy="8" r="6" fill="#2b5ea7" stroke="#fff" stroke-width="1.2"/><text x="300" y="10.6">35</text>
+        <circle cx="223.1" cy="51.5" r="6" fill="#2e8b57" stroke="#fff" stroke-width="1.2"/><text x="223.1" y="54.1">36</text>
+        <circle cx="104" cy="26" r="6" fill="#7d4fa3" stroke="#fff" stroke-width="1.2"/><text x="104" y="28.6">37</text>
+        <circle cx="246" cy="8" r="6" fill="#2b5ea7" stroke="#fff" stroke-width="1.2"/><text x="246" y="10.6">38</text>
+        <circle cx="284" cy="10" r="6" fill="#2b5ea7" stroke="#fff" stroke-width="1.2"/><text x="284" y="12.6">39</text>
+        <circle cx="190" cy="8" r="6" fill="#55524a" stroke="#fff" stroke-width="1.2"/><text x="190" y="10.6">40</text>
+        <circle cx="78.3" cy="19.7" r="6" fill="#7d4fa3" stroke="#fff" stroke-width="1.2"/><text x="78.3" y="22.3">41</text>
+        <circle cx="426" cy="52" r="6" fill="#c0392b" stroke="#fff" stroke-width="1.2"/><text x="426" y="54.6">42</text>
+        <circle cx="459" cy="87.1" r="6" fill="#2a9d8f" stroke="#fff" stroke-width="1.2"/><text x="459" y="89.7">43</text>
       </g>
     </svg>
     <div class="legend">
@@ -1044,25 +1107,34 @@
   </section>
 
   <section class="also">
-    <h2>ALSO ON TUESDAY 17 NOVEMBER <span>&middot; 19&ndash;32</span></h2>
+    <h2>ALSO ON TUESDAY 17 NOVEMBER <span>&middot; 19&ndash;39</span></h2>
     <div class="cols">
       <ul>
         <li><span class="n" style="background:#d07a1f">19</span><span class="ic" style="background:#d07a1f">Q</span><span><b>Qatar:</b> Doha opens mediation talks.</span></li>
         <li><span class="n" style="background:#7d4fa3">20</span><span class="ic" style="background:#7d4fa3">$</span><span><b>JPMorgan:</b> Zelle glitch; shares &minus;2.7%.</span></li>
         <li><span class="n" style="background:#2b5ea7">21</span><span class="ic" style="background:#2b5ea7">$</span><span><b>Hungary:</b> $19.5m cash seized in probe.</span></li>
         <li><span class="n" style="background:#d07a1f">22</span><span class="ic" style="background:#d07a1f">G</span><span><b>Gaza:</b> allies urge open aid crossings.</span></li>
-        <li><span class="n" style="background:#2b5ea7">27</span><span class="ic" style="background:#2b5ea7">007</span><span><b>Bond:</b> Pattinson named the next James Bond.</span></li>
-        <li><span class="n" style="background:#2b5ea7">28</span><span class="ic" style="background:#2b5ea7">W</span><span><b>Royals:</b> William&rsquo;s e-rickshaw ride in Mumbai.</span></li>
-        <li><span class="n" style="background:#7d4fa3">29</span><span class="ic" style="background:#7d4fa3">N</span><span><b>NSA:</b> network degraded in maintenance.</span></li>
-      </ul>
-      <ul>
         <li><span class="n" style="background:#d07a1f">23</span><span class="ic" style="background:#d07a1f">~</span><span><b>Gulf:</b> tankers hit by mines off Hormuz.</span></li>
         <li><span class="n" style="background:#c0392b">24</span><span class="ic" style="background:#c0392b">!</span><span><b>Crashes:</b> 25+ killed in Russia and India.</span></li>
         <li><span class="n" style="background:#55524a">25</span><span class="ic" style="background:#55524a">&#9733;</span><span><b>Voyager 1:</b> nears one light-day from Earth.</span></li>
+      </ul>
+      <ul>
         <li><span class="n" style="background:#7d4fa3">26</span><span class="ic" style="background:#7d4fa3">7</span><span><b>Brazil:</b> 7&ndash;0 Singapore; Vin&iacute;cius treble.</span></li>
+        <li><span class="n" style="background:#2b5ea7">27</span><span class="ic" style="background:#2b5ea7">007</span><span><b>Bond:</b> Pattinson named the next James Bond.</span></li>
+        <li><span class="n" style="background:#2b5ea7">28</span><span class="ic" style="background:#2b5ea7">W</span><span><b>Royals:</b> William&rsquo;s e-rickshaw ride in Mumbai.</span></li>
+        <li><span class="n" style="background:#7d4fa3">29</span><span class="ic" style="background:#7d4fa3">N</span><span><b>NSA:</b> network degraded in maintenance.</span></li>
         <li><span class="n" style="background:#2b5ea7">30</span><span class="ic" style="background:#2b5ea7">UN</span><span><b>UN:</b> T&uuml;rk warns on Rwanda plan risks.</span></li>
         <li><span class="n" style="background:#2e8b57">31</span><span class="ic" style="background:#2e8b57">E</span><span><b>Environment:</b> chemicals reach the unborn.</span></li>
         <li><span class="n" style="background:#d07a1f">32</span><span class="ic" style="background:#d07a1f">Y</span><span><b>Yemen:</b> Saudis replace commander.</span></li>
+      </ul>
+      <ul>
+        <li><span class="n" style="background:#2b5ea7">33</span><span class="ic" style="background:#2b5ea7">D</span><span><b>Depardieu:</b> guilty plea in Paris.</span></li>
+        <li><span class="n" style="background:#2b5ea7">34</span><span class="ic" style="background:#2b5ea7">F</span><span><b>France:</b> 146,000 in wage protests.</span></li>
+        <li><span class="n" style="background:#2b5ea7">35</span><span class="ic" style="background:#2b5ea7">~</span><span><b>Black Sea:</b> tanker hit, 19 saved.</span></li>
+        <li><span class="n" style="background:#2e8b57">36</span><span class="ic" style="background:#2e8b57">G</span><span><b>Guinea:</b> 224 jailed over gold mining.</span></li>
+        <li><span class="n" style="background:#7d4fa3">37</span><span class="ic" style="background:#7d4fa3">2</span><span><b>USA 2&ndash;0 Haiti:</b> Pulisic bicycle kick.</span></li>
+        <li><span class="n" style="background:#2b5ea7">38</span><span class="ic" style="background:#2b5ea7">E</span><span><b>Equinor:</b> cyberattack on IT systems.</span></li>
+        <li><span class="n" style="background:#2b5ea7">39</span><span class="ic" style="background:#2b5ea7">M</span><span><b>Moldova:</b> drones fly over Chisinau.</span></li>
       </ul>
     </div>
   </section>
@@ -1077,3 +1149,4 @@
 </div><!-- /sheet -->
 </body>
 </html>
+
